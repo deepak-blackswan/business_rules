@@ -1,0 +1,61 @@
+define Payment {
+    text : '',
+    constructor : function(message, title){
+        this.text = message;
+        this.title = title;
+    }
+}
+
+//Physical Product
+rule physicalproduct {
+
+    when {
+        m : Payment m.text =~ /^physical(\s*product)?$/;  
+    }
+    then {
+		console.log("generate a packing slip for shipping and generate a commission payment to the agent");        
+    }
+
+}
+
+//Books
+rule book {
+    when {
+        m : Payment m.text =~ /.*book$/;
+    }
+    then {
+        console.log("create a duplicate packing slip for the royalty department and generate a commission payment to the agent");
+    }
+}
+
+//New Membership
+rule membership {
+    when {
+        m : Payment m.text =~ /.*membership$/;
+    }
+    then {
+        console.log("activate that membership and e-mail the owner and inform them of the activation");
+    }
+}
+
+//Upgrade Membership
+rule upgrade {
+    when {
+        m : Payment m.text =~ /.*upgrade$/;
+    }
+    then {
+        console.log("apply the upgrade and e-mail the owner and inform them of the upgrade");
+    }
+}
+
+//Video with title as 'Learn to Ski'
+rule video {
+
+    when {
+        m : Payment m.text=~ /.*video$/ && m.title =~ /^Learning to Ski(\s*video)?$/;  
+    }
+    then {
+		console.log("add a free 'First Aid' video to the packing slip (the result of a court decision in 1997)");        
+    }
+
+}
