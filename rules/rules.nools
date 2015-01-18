@@ -52,7 +52,7 @@ rule upgrade {
 rule video {
 
     when {
-        m : Payment m.text=~ /.*video$/ && m.title =~ /^Learning to Ski(\s*video)?$/;  
+        m : Payment m.text=~ /.*video$/ && m.title =~ /^Learning to Ski(\s*Ski)?$/;  
     }
     then {
 		console.log("add a free 'First Aid' video to the packing slip (the result of a court decision in 1997)");        

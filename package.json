@@ -1,0 +1,9 @@
+{
+  "name": "business_rules",
+  "description": "experimenting with Nools",
+  "author": "Deepak Verma <deepakverma@netbeam.com.au>",
+  "dependencies": {
+    "nools": ">= 0.2.3",
+  },
+  "engine": "node >= 0.10.35"
+}
