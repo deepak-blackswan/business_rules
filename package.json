@@ -1,9 +1,30 @@
 {
   "name": "business_rules",
-  "description": "experimenting with Nools",
-  "author": "Deepak Verma <deepakverma@netbeam.com.au>",
-  "dependencies": {
-    "nools": ">= 0.2.3",
+  "version": "1.0.0",
+  "description": "experimenting with business rules using nools",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
   },
-  "engine": "node >= 0.10.35"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepak-blackswan/business_rules.git"
+  },
+  "keywords": [
+    "mocha",
+    "nools",
+    "nodejs"
+  ],
+  "author": "Deepak Verma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deepak-blackswan/business_rules/issues"
+  },
+  "homepage": "https://github.com/deepak-blackswan/business_rules",
+  "devDependencies": {
+    "it": "^0.2.7",
+    "mocha": "^2.1.0",
+    "should": "^4.6.1",
+    "supertest": "^0.15.0"
+  }
 }
