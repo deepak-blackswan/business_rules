@@ -21,6 +21,9 @@
     "url": "https://github.com/deepak-blackswan/business_rules/issues"
   },
   "homepage": "https://github.com/deepak-blackswan/business_rules",
+  "dependencies": {
+    "nools": "^0.3.0"
+  },
   "devDependencies": {
     "it": "^0.2.7",
     "mocha": "^2.1.0",
